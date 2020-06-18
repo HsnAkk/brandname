@@ -1,0 +1,25 @@
+{
+  "name": "douglas_task",
+  "version": "1.0.0",
+  "description": "task for douglas interview",
+  "main": "server.js",
+  "engines": {
+    "node": "12.16.1",
+    "npm": "6.13.4",
+    "yarn": "1.22.4"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node server.js",
+    "server": "nodemon server.js",
+    "client": "npm start --prefix client",
+    "dev": "concurrently \"npm run server\" \"npm run client\""
+  },
+  "author": "Hasan Akkas",
+  "license": "MIT",
+  "dependencies": {
+    "concurrently": "^5.2.0",
+    "cors": "^2.8.5",
+    "express": "^4.17.1"
+  }
+}
